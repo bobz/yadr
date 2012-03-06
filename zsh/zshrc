@@ -20,6 +20,7 @@ yadr=`find -L ~ -type file -maxdepth 2 -name .yadr | head | sed 's:\.yadr\/::'`
 # Configuration
 source $yadr/zsh/aliases
 source $yadr/zsh/zsh_aliases
+source ~/.bash_aliases
 
 # Things I don't want to publish to github
 [[ -s "$HOME/.secrets" ]] && source "$HOME/.secrets"
