@@ -97,3 +97,9 @@ set sidescroll=1
 for f in split(glob('~/.vim/plugin/settings/*.vim'), '\n')
   exe 'source' f
 endfor
+
+" source ~/.vimrc.mappings if it exists.
+if filereadable(expand("~/.vimrc.mappings"))
+  source ~/.vimrc.mappings
+endif
+
