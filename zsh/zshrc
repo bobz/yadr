@@ -27,6 +27,10 @@ source ~/.bash_aliases
 
 # Vim mode
 bindkey -v
+bindkey "$(echotc kl)" backward-char
+bindkey "$(echotc kr)" forward-char
+bindkey "$(echotc ku)" up-line-or-history
+bindkey "$(echotc kd)" down-line-or-history
 
 # Give me my bash style incremental search
 bindkey '^R' history-incremental-search-backward
@@ -50,3 +54,5 @@ zstyle ':completion:*:approximate:*' max-errors 1 numeric
 
 # Add path to our custom bins
 export PATH=/usr/local/bin:$PATH:$yadr/bin:$yadr/bin/yadr
+
+[[ -s "$HOME/.pathrc" ]] && source "$HOME/.pathrc"

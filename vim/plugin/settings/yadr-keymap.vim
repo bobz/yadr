@@ -73,8 +73,8 @@ nmap <silent> ,qo :copen<CR>
 
 " move up/down quickly by using Ctrl-j, Ctrl-k
 " which will move us around by functions
-nnoremap <silent> <C-j> }
-nnoremap <silent> <C-k> {
+" nnoremap <silent> <C-j> }
+" nnoremap <silent> <C-k> {
 
 autocmd FileType ruby map <buffer> <C-j> ]m
 autocmd FileType ruby map <buffer> <C-k> [m
@@ -115,8 +115,8 @@ nnoremap <silent> I <C-w>k
 nnoremap <silent> M <C-w>j
 
 " Move between tabs with Ctrl-Shift-H and Ctrl-Shift-L
-map <silent> <C-H> :tabprevious<cr>
-map <silent> <C-L> :tabnext<cr>
+" map <silent> <C-H> :tabprevious<cr>
+" map <silent> <C-L> :tabnext<cr>
 
 " Zoom in and out of current window with ,,
 map <silent> ,gz <C-w>o

@@ -100,6 +100,6 @@ endfor
 
 " source ~/.vimrc.mappings if it exists.
 if filereadable(expand("~/.vimrc.mappings"))
-  source ~/.vimrc.mappings
+  source $HOME/.vimrc.mappings
 endif
 
