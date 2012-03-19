@@ -44,6 +44,8 @@ __git_files () {
 
 # Always pushd when changing directory
 # setopt auto_pushd
+# Seems to make cd -0, -1 etc work as expected with ldirs
+setopt pushdminus
 
 # Fuzzy matching of completions for when you mistype them:
 zstyle ':completion:*' completer _complete _match _approximate
