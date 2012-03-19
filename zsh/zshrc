@@ -21,6 +21,7 @@ yadr=`find -L ~ -type file -maxdepth 2 -name .yadr | head | sed 's:\.yadr\/::'`
 source $yadr/zsh/aliases
 source $yadr/zsh/zsh_aliases
 source ~/.bash_aliases
+source ~/.zsh_functions
 
 # Things I don't want to publish to github
 [[ -s "$HOME/.secrets" ]] && source "$HOME/.secrets"
@@ -42,7 +43,7 @@ __git_files () {
 }
 
 # Always pushd when changing directory
-setopt auto_pushd
+# setopt auto_pushd
 
 # Fuzzy matching of completions for when you mistype them:
 zstyle ':completion:*' completer _complete _match _approximate

@@ -109,10 +109,10 @@ nnoremap <silent> ,x :bn<CR>
 " Move between split windows by using the four directions H, L, I, N
 " (note that  I use I and N instead of J and K because  J already does
 " line joins and K is mapped to GitGrep the current word
-nnoremap <silent> H <C-w>h
-nnoremap <silent> L <C-w>l
-nnoremap <silent> I <C-w>k
-nnoremap <silent> M <C-w>j
+" nnoremap <silent> H <C-w>h
+" nnoremap <silent> L <C-w>l
+" nnoremap <silent> I <C-w>k
+" nnoremap <silent> M <C-w>j
 
 " Move between tabs with Ctrl-Shift-H and Ctrl-Shift-L
 " map <silent> <C-H> :tabprevious<cr>
@@ -142,10 +142,10 @@ nnoremap <silent> ss <C-w>s
 nnoremap <silent> ,T :TlistToggle<CR>
 
 " create <%= foo %> erb tags using Ctrl-k in edit mode
-imap <silent> <C-K> <%=   %><Esc>3hi
+" imap <silent> <C-K> <%=   %><Esc>3hi
 
 " create <%= foo %> erb tags using Ctrl-j in edit mode
-imap <silent> <C-J> <%  %><Esc>2hi
+" imap <silent> <C-J> <%  %><Esc>2hi
 
 " ============================
 " Shortcuts for everyday tasks
@@ -156,7 +156,7 @@ imap <silent> <C-J> <%  %><Esc>2hi
 nnoremap <silent> ,cf :let @* = expand("%:p")<CR>
 
 "Clear current search highlight by double tapping //
-nmap <silent> // :nohlsearch<CR>
+" nmap <silent> // :nohlsearch<CR>
 
 " (c)opy (c)ommand - which allows us to execute
 " the line we're looking at (it does so by yy-copy, colon
