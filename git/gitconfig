@@ -100,9 +100,7 @@
   sd = stash drop                   # drop stashes (destory changes)
 
   # status
-  s = status                        # status
-  st = status                       # status
-  stat = status                     # status
+  st="status -sb"
 
   # tag
   t = tag -n                        # show tags with <n> lines of each tag message
@@ -132,7 +130,7 @@
   editor = vim
   excludesfile = ~/.yadr/gitignore_global
 [advice]
-  statusHints = false
+  statusHints = true
 [diff]
   # Git diff will use (i)ndex, (w)ork tree, (c)ommit and (o)bject
   # instead of a/b/c/d as prefixes for patches
