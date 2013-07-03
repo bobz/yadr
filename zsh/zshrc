@@ -19,6 +19,9 @@ fi
 yadr="$HOME/.yadr/"
 
 # Configuration
+# Things I don't want to publish to github
+[[ -s "$HOME/.envrc" ]] && source "$HOME/.envrc"
+
 source $yadr/zsh/aliases
 source $yadr/zsh/zsh_aliases
 source ~/.bash_aliases
