@@ -2,7 +2,6 @@
 # set your user tokens as enivornment variables, such as ~/.secrets
 # See the README for examples.
 [color]
-  ui = true
   status = auto
   interactive = auto
   ui = auto
@@ -117,6 +116,7 @@
 [merge]
   summary = true
   verbosity = 1
+	tool = Kaleidoscope
 [apply]
   whitespace = nowarn
 [branch]
@@ -142,7 +142,7 @@
   enabled = true
 [user]
 	name = Jay Bobzin
-	email = jay@savvyapps.com
+	email = jay@jaybobzin.com
 [difftool "sourcetree"]
 	cmd = /Applications/Kaleidoscope.app/Contents/MacOS/ksdiff -w \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -150,6 +150,11 @@
 	cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
 	trustExitCode = true
 [difftool "Kaleidoscope"]
-	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
+	prompt = false
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[mergetool]
 	prompt = false

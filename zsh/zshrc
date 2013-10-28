@@ -18,14 +18,14 @@ fi
 # yadr=`find -L ~ -type file -maxdepth 2 -name .yadr | head | sed 's:\.yadr\/::'`
 yadr="$HOME/.yadr/"
 
-# Configuration
-# Things I don't want to publish to github
-[[ -s "$HOME/.envrc" ]] && source "$HOME/.envrc"
-
 source $yadr/zsh/aliases
 source $yadr/zsh/zsh_aliases
 source ~/.bash_aliases
 source ~/.zsh_functions
+
+# Configuration
+# Things I don't want to publish to github
+[[ -s "$HOME/.envrc" ]] && source "$HOME/.envrc"
 
 # Things I don't want to publish to github
 [[ -s "$HOME/.secrets" ]] && source "$HOME/.secrets"
